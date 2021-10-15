@@ -1,0 +1,11 @@
+<div class ="weatherWidget">
+    {{#each patials.weatherContext}}
+    <div class ="loaction">
+        <h3>{{loaction.name}}</h3>
+        <a href="{{location.forecastUrl}}">
+            <img src="{{iconUrl}}" alt="{{weather}}">
+            {{weather}}, {{temp}}
+        </a>
+    </div>
+    <small>Source : <a href="https://www.weather.gov/documentation/services-web-api">기상청</a></small>
+</div>
